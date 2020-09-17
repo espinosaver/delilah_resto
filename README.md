@@ -10,9 +10,9 @@ The Delilah Restó system runs with a MySQL database, so the MySQL Database engi
 
 1. Install XAMMP
 2. Start both Apache and MySQL
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture1.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/atachments/readme/Capture1.png)
 3. Open the MySQL Admin
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture2.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/atachments/readme/Capture2.png)
 4. Create a new database
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture3.png)
 5. Name the new database as “delilah_resto” and click on create
