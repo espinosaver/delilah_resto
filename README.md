@@ -1,2 +1,45 @@
-# delilah_resto
-Delilah Restó API
+# Delilha Restó
+
+Delilah Restó is a restaurant web application. This project contains the backend component of the system, which in general is an product catalog and order manager.
+
+## Installation
+
+### HTTP Server and Database
+
+The Delilah Restó system runs with a MySQL database, so the MySQL Database engine must be installed.
+
+1. Install XAMMP
+2. Start both Apache and MySQL
+3. Open the MySQL Admin
+4. Create a new database
+5. Name the new database as “delilah_resto” and click on create
+6. Click on “import”
+7. Click on select
+8. Select the “delilah_resto.sql” file attached in the project folder
+9. Click on “Go”
+10. The following message should appear as well as the database structure
+
+### Express Server
+
+1. Install nodeJS
+2. Open a CMD
+3. Run the following command. Ensure the path in the command matched the absolute path of the routes folder in your pc.
+
+```bash
+C:> cd C:\Users\Public\Documents\delilah_resto\routes
+```
+4. Run the following command “node index.js”
+
+```bash
+C:\Users\Public\Documents\delilah_resto\routes> node index.js 
+```
+5. The following message should appear
+
+## Usage
+
+In order to know about the use of this API please refer to the .yaml file to see the swagger OpenAPI API file description.
+
+
+## Testing
+
+Use Postman to test all the endpoints available in the API. All requests have been tested previously so there is a request Postman collection available inside the project folder inside the “attachments” folder, “Delilah Restó.postman_collection.json”.
