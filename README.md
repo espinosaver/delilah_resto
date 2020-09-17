@@ -14,19 +14,19 @@ The Delilah Restó system runs with a MySQL database, so the MySQL Database engi
 3. Open the MySQL Admin
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture2.png)
 4. Create a new database
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture3.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture3.png)
 5. Name the new database as “delilah_resto” and click on create
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture4.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture4.png)
 6. Click on “import”
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture5.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture5.png)
 7. Click on select
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture6.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture6.png)
 8. Select the “delilah_resto.sql” file attached in the project folder
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture7.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture7.png)
 9. Click on “Go”
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture8.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture8.png)
 10. The following message should appear as well as the database structure
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture9.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture9.png)
 
 ### Express Server
 
@@ -43,7 +43,7 @@ C:> cd C:\Users\Public\Documents\delilah_resto\routes
 C:\Users\Public\Documents\delilah_resto\routes> node index.js 
 ```
 5. The following message should appear
-![alt text](https://github.com/espinosaver/delilah_resto/blob/master/Capture10.png)
+![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture10.png)
 
 ## Usage
 
