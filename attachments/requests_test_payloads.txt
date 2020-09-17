@@ -1,0 +1,214 @@
+Sign-up Payload
+
+{
+    "userFirstName": "Ramón",
+    "userLastName": "Espinosa",
+    "userEmail": "2010espinosa.e@gmail.com",
+    "userPhoneNumber": "3168683692",
+    "userAddress": "Cra 58d # 128b - 01 Int 5 Apto 401",
+    "username": "rames2010",
+    "userPassword": "ramonEspinosa1609",
+    "userRole": "Administrator"
+},
+{
+    "userFirstName": "Alejandra",
+    "userLastName": "Martinez",
+    "userEmail": "alecomsp@gmail.com",
+    "userPhoneNumber": "3168237919",
+    "userAddress": "Cra 58d # 128b - 01 Int 5 Apto 401",
+    "username": "alemart92",
+    "userPassword": "alemartinezSp2008",
+    "userRole": "Administrator"
+},
+{
+    "userFirstName": "Ramón",
+    "userLastName": "Espinosa",
+    "userEmail": "enrisierra@outlook.com",
+    "userPhoneNumber": "3158206223",
+    "userAddress": "Av Cll 127 # 56b - 15 Int 3 Apto 510",
+    "username": "esierra2013",
+    "userPassword": "polASierra2013",
+    "userRole": "User"
+},
+{
+    "userFirstName": "Mary",
+    "userLastName": "Varón",
+    "userEmail": "maryvaronabogada@gmail.com",
+    "userPhoneNumber": "3158206219",
+    "userAddress": "Av Cll 127 # 56b - 15 Int 3 Apto 510",
+    "username": "maryabovar16",
+    "userPassword": "luciana1672",
+    "userRole": "User"
+},
+{
+    "userFirstName": "Ramses",
+    "userLastName": "Espinosa",
+    "userEmail": "ramsespinosa@gmail.com",
+    "userPhoneNumber": "3158683621",
+    "userAddress": "Av Cll 154 # 88-21",
+    "username": "rames2018",
+    "userPassword": "r@m1994",
+    "userRole": "User"
+},
+{
+    "userFirstName": "Ramses",
+    "userLastName": "Varón",
+    "userEmail": "ramsesvarone1@gmail.com",
+    "userPhoneNumber": "3158683621",
+    "userAddress": "Av Cll 154 # 88-21",
+    "username": "ramse3sv2019",
+    "userPassword": "r@m1994",
+    "userRole": "User"
+},
+{
+    "userFirstName": "Felipe",
+    "userLastName": "Varela",
+    "userEmail": "felipevar88@gmail.com",
+    "userPhoneNumber": "3133435621",
+    "userAddress": "Cra 24 # 38-32",
+    "username": "varonfelipe100",
+    "userPassword": "pipemin45",
+    "userRole": "User"
+},
+{
+    "userFirstName": "Andres",
+    "userLastName": "Varón",
+    "userEmail": "varonrmed2011@gmail.com",
+    "userPhoneNumber": "3158595623",
+    "userAddress": "Cra 14 # 88-22",
+    "username": "varonmed2011",
+    "userPassword": "medicinedoctor",
+    "userRole": "User"
+}
+
+
+Login Payload
+
+Administrators
+
+{
+    "usernameOrUserEmail": "esierra2013",
+    "userPassword": "polASierra2013"
+}
+
+{
+    "usernameOrUserEmail": "maryvaronabogada@gmail.com",
+    "userPassword": "luciana1672"
+}
+
+{
+    "usernameOrUserEmail": "felipevar88@gmail.com",
+    "userPassword": "pipemin45"
+}
+
+Users
+
+{
+    "usernameOrUserEmail": "2010espinosa.e@gmail.com",
+    "userPassword": "ramonEspinosa1609"
+}
+{
+    "usernameOrUserEmail": "alemart92",
+    "userPassword": "alemartinezSp2008"
+}
+{
+    "usernameOrUserEmail": "rames2018",
+    "userPassword": "r@m1994"
+}
+{
+    "usernameOrUserEmail": "ramsesvarone1@gmail.com",
+    "userPassword": "r@m1994"
+}
+{
+    "usernameOrUserEmail": "varonrmed2011@gmail.com",
+    "userPassword": "medicinedoctor"
+}
+
+
+Create Product Payload
+
+{
+    "productName": "Ajiaco Santafereño",
+    "productDescription": "Delicioso ajiaco Bogotano acompañado con arroz, aguacate y arepa",
+    "productPrice": 15000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+{
+    "productName": "Bandeja Paisa",
+    "productDescription": "Deliciosa bandeja Paisa tamaño familiar",
+    "productPrice": 20000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+{
+    "productName": "Chuleta Valluna",
+    "productDescription": "Deliciosa chuleta de cerdo Valluna acompañada de arroz y platano salado",
+    "productPrice": 18000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+{
+    "productName": "Cuy asado",
+    "productDescription": "Delicioso cuy Nariñense acompañado de arror, para pastusa salteada en mantequilla y ajo",
+    "productPrice": 22000,
+    "productPicturePath": "",
+    "productAvailable": 0
+}
+{
+    "productName": "Mamona Llanera",
+    "productDescription": "Delicioasa mamona asada a la Llanera acompañada de arroz, papa, yuca y guacamole",
+    "productPrice": 25000,
+    "productPicturePath": "",
+    "productAvailable": 1
+},
+{
+    "productName": "Fritanga",
+    "productDescription": "Deliciosa picada de fritanga con rellena, longaniza, envuelto, chuchuyo, papa criolla, arepa de coclo, cerdo, pollo, y carne de res",
+    "productPrice": 30000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+{
+    "productName": "Mute de queso Cordobéz",
+    "productDescription": "Deliciosa sopa de queso con yuca, ñame, papa sabanera, cebolla y queso costeño colombiano",
+    "productPrice": 13000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+{
+    "productName": "Sancocho Boyacense",
+    "productDescription": "Delicioso sancocho Boyacense acompañado de arroz y ensalada",
+    "productPrice": 12500,
+    "productPicturePath": "",
+    "productAvailable": 0
+}
+{
+    "productName": "Arroz con pollo",
+    "productDescription": "Delicioso arroz con pollo familiar",
+    "productPrice": 40000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+{
+    "productName": "Changuas",
+    "productDescription": "Deliciosa changua tamaño familiar",
+    "productPrice": 10000,
+    "productPicturePath": "",
+    "productAvailable": 1
+}
+
+
+Create Order Payload
+ 
+{
+  "orderPaymentMethod": "Efectivo",
+  "orderStatus": "Nuevo",
+  "products": [
+    {
+      "productId": 28,
+      "quantity": 2
+    }
+  ],
+  "userId": 5
+}

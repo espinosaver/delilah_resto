@@ -1,0 +1,5 @@
+1. Revisar por que cuando se pone res. status(204) el endpoint no responde nada
+2. Incluir la posibilidad de modificar el metodo de pago de un pedido antes de que el estado del pedido cambie al estado de enviando
+3. Incluir la posibilidad de modificar los productos y cantidades de un pedido antes de que el estado del pedido cambie a confirmado
+4. Controlar la generación de los ids de los elementos en las bses de datos
+5. Incluir un endpoint para poder agregar productos favortitos a un usuario implementando un nuevo modelo UserProduct

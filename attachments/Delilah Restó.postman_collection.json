@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "74316441-427c-4e30-a2ab-1dc382c81246",
+		"name": "Delilah Restó",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign-up",
+			"item": [
+				{
+					"name": "sign-up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userFirstName\": \"Andres\",\r\n  \"userLastName\": \"Varón\",\r\n  \"userEmail\": \"varonrmed2011@gmail.com\",\r\n  \"userPhoneNumber\": \"3158595623\",\r\n  \"userAddress\": \"Cra 14 # 88-22\",\r\n  \"username\": \"varonmed2011\",\r\n  \"userPassword\": \"medicinedoctor\",\r\n  \"userRole\": \"User\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usernameOrUserEmail\": \"felipevar88@gmail.com\",\r\n    \"userPassword\": \"pipemin45\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAwNDIwMTgsImV4cCI6MTYwMDA3ODAxOH0.w8Ub9YCT91nKoMb-xXZXQe-bWfcyNjN5BkTkbPEMXYM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/{username}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE1OTk5NDM5MDksImV4cCI6MTU5OTk3OTkwOX0.UgV86UJYEE5CHZzc8AjrZg7RvJrGpCF5cVpg4H8wmVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/users/rames2010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"users",
+								"rames2010"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAwMjUyNTYsImV4cCI6MTYwMDA2MTI1Nn0.0efZ73WvYnid88qOXBsrmPmUxnw2-boiH0tcrP9fwIc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhbWVzMjAxMCIsInVzZXJFbWFpbCI6IjIwMTBlc3Bpbm9zYS5lQGdtYWlsLmNvbSIsInVzZXJSb2xlIjoiVXNlciIsImlhdCI6MTU5ODg0MTkzNSwiZXhwIjoxNTk4ODQ1NTM1fQ.sPgszrWV1Ol1GLlMfJeY87Dk8hoyQWFB81iDFSjjy7Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Cuy asado\",\r\n    \"productDescription\": \"Delicioso cuy Nariñense acompañado de arror, para pastusa salteada en mantequilla y ajo\",\r\n    \"productPrice\": 22000,\r\n    \"productPicturePath\": \"\",\r\n    \"productAvailable\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAxMjk3OTMsImV4cCI6MTYwMDE2NTc5M30.hzDZiJJVeCLtDWSm_gHIwcwx9WiaW0pe-CBe4vJ1dsU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/{productId}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE1OTk5NTE4ODQsImV4cCI6MTU5OTk4Nzg4NH0.n7A7GpcLa7XxTGaWK7Gd0s_G-6_4Rghs-cjFCXpLTE4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/products/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"products",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/users/{username}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAwMjU2NDQsImV4cCI6MTYwMDA2MTY0NH0.hmCfWF8WwuxyNX5QKnjK-r-kgzRccRy0XUXA1Tuw7fI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/products/users/rames2010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"products",
+								"users",
+								"rames2010"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/{productId}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAwMjM2ODYsImV4cCI6MTYwMDA1OTY4Nn0.1O0yGNTjWgFzgzfrjiCFk3qminqIF4H3Jn_pCIIUnK8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Changuas\",\r\n    \"productDescription\": \"Deliciosa changua tamaño familiar\",\r\n    \"productPrice\": 15000,\r\n    \"productPicturePath\": \"\",\r\n    \"productAvailable\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/products/27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"products",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/{productId}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAwMjU2NDQsImV4cCI6MTYwMDA2MTY0NH0.hmCfWF8WwuxyNX5QKnjK-r-kgzRccRy0XUXA1Tuw7fI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/products/53",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"products",
+								"53"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAyNjk4MzIsImV4cCI6MTYwMDMwNTgzMn0.jBuPVihhlyM4Q8R3w5LMTbgFB-jD4ecYNFCB8QoD2cE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"orderPaymentMethod\": \"Efectivo\",\r\n  \"orderStatus\": \"Nuevo\",\r\n  \"userId\": 7,\r\n  \"productsInOrder\": [\r\n    {\r\n      \"productId\": 21,\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"productId\": 22,\r\n      \"quantity\": 9\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAyNjk4MzIsImV4cCI6MTYwMDMwNTgzMn0.jBuPVihhlyM4Q8R3w5LMTbgFB-jD4ecYNFCB8QoD2cE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/{orderId}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAyMDAwMTIsImV4cCI6MTYwMDIzNjAxMn0.jAd4FfbeRbcrK7yosHG5Z5M1iFKCnXMs0IMaybSWWGg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/orders/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"orders",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/users/{username}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAyNjk4MzIsImV4cCI6MTYwMDMwNTgzMn0.jBuPVihhlyM4Q8R3w5LMTbgFB-jD4ecYNFCB8QoD2cE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/orders/users/ramse3sv2019",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"orders",
+								"users",
+								"ramse3sv2019"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/{orderId}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAyNjk4MzIsImV4cCI6MTYwMDMwNTgzMn0.jBuPVihhlyM4Q8R3w5LMTbgFB-jD4ecYNFCB8QoD2cE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderStatus\": \"Enviando\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/orders/57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"orders",
+								"57"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/{orderId}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZSI6IkFkbWluaXN0cmF0b3IiLCJpYXQiOjE2MDAyNjk4MzIsImV4cCI6MTYwMDMwNTgzMn0.jBuPVihhlyM4Q8R3w5LMTbgFB-jD4ecYNFCB8QoD2cE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/orders/60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"orders",
+								"60"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
