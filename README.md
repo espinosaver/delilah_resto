@@ -14,6 +14,7 @@ The Delilah Restó system runs with a MySQL database, so the MySQL Database engi
 3. Open the MySQL Admin
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture2.png)
 4. Create a new database
+
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture3.png)
 5. Name the new database as “delilah_resto” and click on create
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture4.png)
