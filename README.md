@@ -14,7 +14,6 @@ The Delilah Restó system runs with a MySQL database, so the MySQL Database engi
 3. Open the MySQL Admin
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture2.png)
 4. Create a new database
-
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture3.png)
 5. Name the new database as “delilah_resto” and click on create
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture4.png)
@@ -44,13 +43,11 @@ C:> cd C:\Users\Public\Documents\delilah_resto\routes
 C:\Users\Public\Documents\delilah_resto\routes> node index.js 
 ```
 5. The following message should appear
-
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture10.png)
 
 ## Usage
 
 In order to know about the use of this API please refer to the .yaml file to see the swagger OpenAPI API file description.
-
 
 ## Testing
 
