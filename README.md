@@ -43,6 +43,7 @@ C:> cd C:\Users\Public\Documents\delilah_resto\routes
 C:\Users\Public\Documents\delilah_resto\routes> node index.js 
 ```
 5. The following message should appear
+
 ![alt text](https://github.com/espinosaver/delilah_resto/blob/master/attachments/readme/Capture10.png)
 
 ## Usage
